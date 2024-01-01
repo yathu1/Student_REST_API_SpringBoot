@@ -31,7 +31,7 @@ public class Main {
             Student kamal = new Student("kamal",2,"chennai",11);
 
             List<Student> students = List.of(yathu,kamal);
-            studentRepository.saveAll(students);
+          //  studentRepository.saveAll(students);
         };
     }
 

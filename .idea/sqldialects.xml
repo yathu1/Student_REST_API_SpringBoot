@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/Mrboo/src/main/resources/db/migration/V1__Initial_Setup.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Mrboo/src/main/resources/db/migration/V2__Add_Unique_Constraint_To_Student.sql" dialect="GenericSQL" />
+  </component>
+</project>
