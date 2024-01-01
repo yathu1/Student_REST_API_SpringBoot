@@ -4,16 +4,24 @@ import jakarta.persistence.*;
 
 import java.util.Objects;
 @Entity
+@Table(
+        name = "student",
+        uniqueConstraints = {
+                @UniqueConstraint(name = "student_email_unique",columnNames = "email")
+        }
+)
 public  class Student {
     @Id
     @SequenceGenerator(
-            name = "student_id_sequence",
-            sequenceName = "student_id_sequence"
+            name = "student_id_seq",
+            sequenceName = "student_id_seq",
+            allocationSize = 1
+
 
     )
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "student_id_sequence"
+            generator = "student_id_seq"
     )
     private Integer id;
     @Column(nullable = false)
